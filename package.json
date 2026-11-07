@@ -1,0 +1,19 @@
+{
+  "name": "medicion-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portal local de cajeros y supervisores conectado a PostgreSQL",
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node --env-file=.env server.mjs",
+    "setup": "node --env-file=.env setup.mjs",
+    "seed": "node --env-file=.env cargar_demo_2026.mjs"
+  },
+  "dependencies": {
+    "pg": "^8.16.3"
+  }
+}

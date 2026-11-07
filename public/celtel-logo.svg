@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="276" height="86" viewBox="0 0 276 86" role="img" aria-labelledby="title desc">
+  <title id="title">celtel</title>
+  <desc id="desc">Marca de parodia original: señal ascendente de trazos redondeados y palabra celtel inclinada.</desc>
+  <g fill="none" stroke-linecap="round" stroke-width="7" transform="translate(5 5) skewX(-12)">
+    <path d="M15 52h18M19 39h28" stroke="#00529b"/>
+    <path d="M24 26h36" stroke="#0096d1"/>
+    <circle cx="63" cy="26" r="4" stroke="#0096d1" stroke-width="4"/>
+  </g>
+  <text x="76" y="63" font-family="Arial, Helvetica, sans-serif" font-size="62" font-style="italic" font-weight="800" letter-spacing="-3.8" fill="#00529b">celtel</text>
+</svg>

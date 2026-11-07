@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#00529b" />
+    <title>Iniciar sesión · celtel</title>
+    <link rel="icon" href="/celtel-icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/celtel.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body data-page="login">
+    <main class="login-layout">
+      <section class="login-brand">
+        <div>
+          <a class="brand" href="/" aria-label="celtel · Inicio"
+            ><img src="/celtel-logo.svg" alt="celtel" width="276" height="86" /></a
+          ><span class="brand-caption">Portal de medición</span>
+        </div>
+        <div class="brand-copy">
+          <span class="eyebrow light">CAJEROS Y SUPERVISORES</span>
+          <h1>Tu jornada,<br />en un solo lugar.</h1>
+          <p>Consulta tus tareas, sigue tus resultados y mantén al equipo conectado.</p>
+          <div class="brand-illustration" aria-hidden="true">
+            <div class="mock-top"><span></span><span></span><span></span></div>
+            <div class="mock-label">Rendimiento del equipo</div>
+            <div class="mock-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="mock-bottom"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+        <p class="brand-foot">celtel · Gestión y rendimiento del equipo</p>
+      </section>
+      <section class="login-form-area">
+        <div class="login-box">
+          <span class="eyebrow">BIENVENIDO</span>
+          <h2>Iniciar sesión</h2>
+          <p class="muted">Ingresa con tu cuenta para abrir tu panel.</p>
+          <form id="login-form">
+            <label
+              >Correo electrónico<input
+                type="email"
+                name="correo"
+                autocomplete="username"
+                placeholder="tu.correo@empresa.com"
+                required
+                maxlength="254" /></label
+            ><label
+              >Contraseña<input
+                type="password"
+                name="contrasena"
+                autocomplete="current-password"
+                placeholder="Tu contraseña"
+                required
+                maxlength="128" /></label
+            ><button class="primary wide" type="submit">
+              Entrar a mi panel <span aria-hidden="true">→</span>
+            </button>
+            <p id="login-error" class="form-message error" role="alert"></p>
+          </form>
+          <div class="login-note">
+            <span class="note-icon">i</span>
+            <p>
+              Tu supervisor administra las cuentas de acceso. Si necesitas una cuenta, solicítala
+              con él.
+            </p>
+          </div>
+          <p class="local-label">
+            <span class="online-dot"></span> celtel · Portal local de operaciones
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#00529b" />
+    <title>Supervisión · celtel</title>
+    <link rel="icon" href="/celtel-icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/celtel.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body data-page="supervisor">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div>
+          <a class="brand" href="/" aria-label="celtel · Inicio"
+            ><img src="/celtel-logo.svg" alt="celtel" width="276" height="86" /></a
+          ><span class="brand-caption">Portal de medición</span>
+        </div>
+        <p class="sidebar-label">PANEL DEL SUPERVISOR</p>
+        <nav aria-label="Navegación principal">
+          <button data-view="inicio" class="nav-item active"><span>◫</span> Inicio</button
+          ><button data-view="equipo" class="nav-item"><span>◷</span> Mi equipo</button
+          ><button data-view="tareas" class="nav-item"><span>☑</span> Tareas</button
+          ><button data-view="rendimiento" class="nav-item"><span>▥</span> Rendimiento</button
+          ><button data-view="evaluacion" class="nav-item">
+            <span>▤</span> Registrar mediciones</button
+          ><button data-view="cuentas" class="nav-item"><span>⊕</span> Crear cuentas</button
+          ><button data-view="perfil" class="nav-item"><span>◉</span> Mi perfil</button>
+        </nav>
+        <div class="sidebar-bottom">
+          <p><span class="online-dot"></span> Conectado a Medicion</p>
+          <button id="logout" class="nav-item">↪ Cerrar sesión</button>
+        </div>
+      </aside>
+      <div class="app-main">
+        <header class="topbar">
+          <p>
+            Operaciones <span class="breadcrumb">/ <span id="breadcrumb">Inicio</span></span>
+          </p>
+          <div class="identity">
+            <span id="user-name"></span><span id="avatar" class="avatar"></span>
+          </div>
+        </header>
+        <main id="content" tabindex="-1"><p class="loading">Cargando al equipo…</p></main>
+        <footer>celtel · Portal de cajeros y supervisores</footer>
+      </div>
+    </div>
+    <div id="toast" role="status" class="toast" hidden></div>
+  </body>
+</html>
