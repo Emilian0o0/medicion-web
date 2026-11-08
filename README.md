@@ -12,12 +12,14 @@ Copy-Item .env.example .env
 
 notepad .env
 
--En .env, cambia PGADMIN_PASSWORD por la contraseña real del usuario postgres.
+- En .env, cambia PGADMIN_PASSWORD por la contraseña real del usuario postgres.
 - En PGPASSWORD, elige una contraseña para la cuenta que usará la aplicación.
 - luego hay que ejecutar
 
 pnpm install --frozen-lockfile
+
 pnpm setup
+
 pnpm start
 
 -abrir http://127.0.0.1:3000
