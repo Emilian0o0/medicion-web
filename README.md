@@ -3,8 +3,8 @@
 - Hay que tener PostgreSQL 18, Node.js 24 o posterior y pnpm
 - Abrir pawershell y ejecutar:
   
-git clone https://github.com/Emilian0o0/medicion-web.git
-cd medicion-web
+git clone https://github.com/Emilian0o0/medicion-web.git /n
+cd medicion-web /n
 Copy-Item .env.example .env
 notepad .env
 
