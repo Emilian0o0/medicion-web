@@ -1,25 +1,9 @@
-# Instrucciones para reeplicar el programa
+# Medición
 
-- Hay que tener PostgreSQL 18, Node.js 24 o posterior y pnpm
-- Abrir pawershell y ejecutar:
-  
-git clone https://github.com/Emilian0o0/medicion-web.git 
+Proyecto escolar para registrar tareas y evaluar el rendimiento de cajeros. Usa Node.js, PostgreSQL y páginas HTML, CSS y JavaScript.
 
+Para instalarlo desde cero, sigue la [guía paso a paso para Windows](GUIA_INSTALACION_WINDOWS.md). Incluye la instalación de programas, descarga del proyecto, configuración de contraseñas, carga de datos de prueba, inicio del portal y soluciones a errores frecuentes.
 
-cd medicion-web 
+La preparación de la base se ejecuta con `pnpm.cmd run setup`. Para encender el portal después de configurarlo, usa `pnpm.cmd run start` y abre [http://127.0.0.1:3000](http://127.0.0.1:3000).
 
-Copy-Item .env.example .env
-
-notepad .env
-
-- En .env, cambia PGADMIN_PASSWORD por la contraseña real del usuario postgres.
-- En PGPASSWORD, elige una contraseña para la cuenta que usará la aplicación.
-- luego hay que ejecutar
-
-pnpm install --frozen-lockfile
-
-pnpm setup
-
-pnpm start
-
-- abrir http://127.0.0.1:3000
+Los datos cargados son ficticios y sirven para probar y evaluar el programa.
